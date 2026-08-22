@@ -5,6 +5,7 @@ import Section from "../../components/Section";
 import Shop from "../shop/Shop";
 import Shopify from "../../components/Shopify";
 import News from "../../components/News";
+import Footer from "../../components/Footer";
 
 
 export default function Home() {
@@ -27,6 +28,9 @@ export default function Home() {
             </div>
             <div>
                 <News></News>
+            </div>
+            <div>
+                <Footer></Footer>
             </div>
         </React.Fragment>
     );
