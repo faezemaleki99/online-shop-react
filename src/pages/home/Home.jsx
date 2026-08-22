@@ -3,6 +3,8 @@ import Slider from "../../components/Slider";
 import Categories from "../../components/Categories";
 import Section from "../../components/Section";
 import Shop from "../shop/Shop";
+import Shopify from "../../components/Shopify";
+import News from "../../components/News";
 
 
 export default function Home() {
@@ -19,6 +21,12 @@ export default function Home() {
             </div>
             <div style={{ marginTop: '8rem' }}>
                 <Shop></Shop>
+            </div>
+            <div style={{ marginTop: '8rem' }}>
+                <Shopify></Shopify>
+            </div>
+            <div>
+                <News></News>
             </div>
         </React.Fragment>
     );
