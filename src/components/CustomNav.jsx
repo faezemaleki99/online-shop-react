@@ -35,7 +35,7 @@ export default function CustomNav() {
                 </ul>
                 <Link to="/cart" className="nav-link text-white">
                     <span className="position-relative">
-                        <i className="fa-solid fa-cart-shopping fs-5"></i>
+                        <i className="fa-solid fa-cart-shopping fs-5" style={{color: 'white'}}></i>
                         {itemsCount > 0 && (<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{ fontSize: "9px" }}>
                             {itemsCount} </span>
                         )}

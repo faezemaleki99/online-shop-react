@@ -1,60 +1,46 @@
-import iphone from '../assets/galaxy-s24.png'
-import macbook from '../assets/macbook.png'
-import dell from '../assets/dell.png'
-import ipad from '../assets/ipad pro.png'
-import tab from '../assets/galaxy tab s9.png'
-import watch from '../assets/apple watch.png'
-import ssd from '../assets/ssd.png'
-import master from '../assets/mx master.png'
+import jacket from "../assets/jacket.png"
+import pocket from "../assets/pocket.png"
+import sneaker from "../assets/sneaker.png"
+import glass from "../assets/glass.png"
+import jacket2 from "../assets/jacket2.png"
+import rucksack from "../assets/rucksack.png"
 
 export const PRODUCTS = [
 
     {
         id: 1,
-        productName: 'Samsung Galaxy S24',
-        productPrice: 899,
-        productImage: iphone
+        productName: 'Denim jacket Soft',
+        productPrice: 390.00,
+        productImage: jacket
     },
     {
         id: 2,
-        productName: 'MacBook Air M3',
-        productPrice: 1099,
-        productImage: macbook
+        productName: 'Pocket Denim Overshirt',
+        productPrice: 75.00,
+        productImage: pocket
     },
     {
         id: 3,
-        productName: 'Dell XPS 15',
-        productPrice: 1299,
-        productImage: dell
+        productName: 'Brown Floral Sneaker',
+        productPrice: 70.00,
+        productImage: sneaker
     },
     {
         id: 4,
-        productName: 'iPad Pro',
-        productPrice: 799,
-        productImage: ipad
+        productName: 'Folded Vase Glasse',
+        productPrice: 199.99,
+        productImage: glass
     },
     {
         id: 5,
-        productName: 'Samsung Galaxy Tab S9',
-        productPrice: 699,
-        productImage: tab
+        productName: 'Hidden Denim Jacket',
+        productPrice: 79.99,
+        productImage: jacket2
     },
     {
         id: 6,
-        productName: 'Logitech MX Master 3S',
-        productPrice: 99,
-        productImage: master
-    },
-    {
-        id: 7,
-        productName: 'Apple Watch Series 9',
-        productPrice: 429,
-        productImage: watch
-    },
-    {
-        id: 8,
-        productName: 'Samsung T7 SSD 1TB',
-        productPrice: 99,
-        productImage: ssd
+        productName: 'Denim Rucksack',
+        productPrice: 49.00,
+        productImage: rucksack
     }
 ]

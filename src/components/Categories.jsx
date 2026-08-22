@@ -36,7 +36,9 @@ export default function Categories() {
                                         Some quick example text to build on
                                         the card title.
                                     </p>
-                                    <a href="#" className="btn d-block mx-auto" style={{backgroundColor: '#635bff', color: 'white', alignSelf: 'center'}}>View More</a>
+                                    <div className="d-flex justify-content-center">
+                                        <a href="#" className="btn" style={{ backgroundColor: '#635bff', color: 'white', alignSelf: 'center' }}>View More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
