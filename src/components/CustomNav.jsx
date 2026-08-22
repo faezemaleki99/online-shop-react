@@ -12,22 +12,35 @@ export default function CustomNav() {
     return (
         <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
             <div className="container">
-                <a className="navbar-brand" href="#">Online Shop</a>
-                <ul className="navbar-nav">
+                <Link className="navbar-brand d-flex align-items-center" to="/">
+                    <img src="/src/assets/logo2.png" style={{ width: "40px", height: "40px", marginRight: "10px" }}/>
+                    <span>OnlineShop</span>
+                </Link>
+                <ul className="navbar-nav mx-auto d-flex flex-row gap-3">
                     <li className="nav-item">
-                        <Link to="/" className="nav-link active">Shop</Link>
+                        <Link to="/" className="nav-link">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/cart" className="nav-link">
-                            <i className="fa-solid fa-cart-shopping position-relative">
-                                {itemsCount > 0 && <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{fontSize: '9px'}}>
-                                    {itemsCount}
-                                    <span className="visually-hidden"></span>
-                                </span>}
-                            </i>
-                        </Link>
+                        <Link to="/shop" className="nav-link"> Shop</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/about" className="nav-link"> About</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/contact" className="nav-link">Contact Us</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/categories" className="nav-link">Categories</Link>
                     </li>
                 </ul>
+                <Link to="/cart" className="nav-link text-white">
+                    <span className="position-relative">
+                        <i className="fa-solid fa-cart-shopping fs-5"></i>
+                        {itemsCount > 0 && (<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{ fontSize: "9px" }}>
+                            {itemsCount} </span>
+                        )}
+                    </span>
+                </Link>
             </div>
         </nav>
     )

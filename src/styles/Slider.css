@@ -1,0 +1,240 @@
+.shop-slider {
+    position: relative;
+    width: 100%;
+    min-height: 560px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.slider-content {
+    min-height: 560px;
+    padding: 60px 80px;
+}
+
+.slider-text {
+    padding: 30px;
+    z-index: 2;
+}
+
+.slider-subtitle {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #635bff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.slider-text h1 {
+    margin: 0 0 15px;
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #222;
+}
+
+.slider-text h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #444;
+}
+
+.slider-text h3 strong {
+    color: #635bff;
+    font-weight: 700;
+}
+
+.slider-text p {
+    max-width: 520px;
+    margin-bottom: 30px;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+.slider-content .slider-text .shop-btn {
+    padding: 13px 32px;
+    border: none;
+    border-radius: 30px;
+    background: #635bff;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    background: #4b43d6;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 91, 255, 0.25);
+}
+
+.slider-content .slider-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: 30px;
+}
+
+.slider-content .slider-image img {
+    max-width: 90%;
+    max-height: 400px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.swiper-slide-active .slider-image img {
+    transform: scale(1.03);
+}
+
+.shop-slider .swiper-button-prev,
+.shop-slider .swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background: white !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12) !important;
+    color: #222 !important;
+    transition: all 0.3s ease !important;
+}
+
+.shop-slider .swiper-button-prev::after,
+.shop-slider .swiper-button-next::after {
+    font-size: 9px !important;
+    font-weight: 700 !important;
+}
+
+.shop-slider .swiper-button-prev:hover,
+.shop-slider .swiper-button-next:hover {
+    background: #635bff !important;
+    color: white !important;
+    transform: scale(1.08) !important;
+}
+
+.shop-slider .swiper-navigation-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.shop-slider .swiper-button-prev {
+    left: 25px !important;
+}
+
+.shop-slider .swiper-button-next {
+    right: 25px !important;
+}
+
+.shop-slider .swiper-pagination {
+    bottom: 25px !important;
+}
+
+.shop-slider .swiper-pagination-bullet {
+    width: 9px !important;
+    height: 9px !important;
+    background: #aaa !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease !important;
+}
+
+.shop-slider .swiper-pagination-bullet-active {
+    width: 25px !important;
+    border-radius: 10px !important;
+    background: #635bff !important;
+}
+
+@media (max-width: 991px) {
+
+    .shop-slider,
+    .shop-slider .swiper-slide {
+        min-height: auto;
+    }
+
+    .slider-content {
+        min-height: auto;
+        padding: 60px 50px 80px;
+    }
+
+    .slider-text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .slider-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slider-text h1 {
+        font-size: 40px;
+    }
+
+    .slider-image {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    .slider-image img {
+        max-height: 300px;
+    }
+
+    .shop-slider .swiper-button-prev {
+        left: 15px;
+    }
+
+    .shop-slider .swiper-button-next {
+        right: 15px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .slider-content {
+        padding: 40px 20px 70px;
+    }
+
+    .slider-text h1 {
+        font-size: 32px;
+    }
+
+    .slider-text h3 {
+        font-size: 20px;
+    }
+
+    .slider-subtitle {
+        font-size: 16px;
+    }
+
+    .slider-image {
+        min-height: 240px;
+    }
+
+    .slider-image img {
+        max-height: 240px;
+        max-width: 80%;
+    }
+
+    .shop-slider .swiper-button-prev,
+    .shop-slider .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .shop-slider .swiper-button-prev::after,
+    .shop-slider .swiper-button-next::after {
+        font-size: 14px;
+    }
+
+    .shop-slider .swiper-button-prev {
+        left: 8px;
+    }
+
+    .shop-slider .swiper-button-next {
+        right: 8px;
+    }
+}
