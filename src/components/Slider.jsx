@@ -6,8 +6,12 @@ import "swiper/css/pagination";
 import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
 import "../styles/Slider.css";
 import bgImage from "../assets/bg-image.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function Slider() {
+
+    const navigate = useNavigate();
+
     return (
         <React.Fragment>
             <Swiper className="shop-slider" style={{ backgroundImage: `url(${bgImage})` }}
@@ -52,7 +56,7 @@ export default function Slider() {
                                     incididunt ut labore et dolore magna aliqua.
                                 </p>
 
-                                <button className="shop-btn">Shop Now</button>
+                                <button className="shop-btn" onClick={()=> navigate("/shop")}>Shop Now</button>
                             </div>
                             <div className="col-lg-6 text-center slider-image">
                                 <img src="/src/assets/bag.png" className="img-fluid" />

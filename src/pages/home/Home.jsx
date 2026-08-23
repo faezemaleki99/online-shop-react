@@ -15,13 +15,13 @@ export default function Home() {
             <div>
                 <Slider></Slider>
             </div>
-            <div style={{ marginTop: '8rem' }}>
+            <div className="mt-5">
                 <Categories></Categories>
             </div>
             <div>
                 <Section></Section>
             </div>
-            <div style={{ marginTop: '8rem' }}>
+            <div className="mt-5">
                 <div className="container mb-5">
                     <div className="mb-5">
                         <h3 className="text-center mb-0 fw-normal">Top Collections</h3>
