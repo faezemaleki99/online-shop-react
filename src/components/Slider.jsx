@@ -5,20 +5,19 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
 import "../styles/Slider.css";
+import bgImage from "../assets/bg-image.jpg";
 
 export default function Slider() {
     return (
         <React.Fragment>
-            <Swiper className="shop-slider"
+            <Swiper className="shop-slider" style={{ backgroundImage: `url(${bgImage})` }}
                 modules={[Navigation, Pagination, A11y, Autoplay]}
                 spaceBetween={0}
                 slidesPerView={1}
                 navigation
                 scrollbar={{ draggable: true }}
                 pagination={{ clickable: true }}
-                autoplay={{
-                    delay: 5000,
-                }}
+                autoplay={{ delay: 5000 }}
             >
                 <SwiperSlide>
                     <div className="container">
